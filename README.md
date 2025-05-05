@@ -33,7 +33,6 @@ Core Models:
 
 * Average calories over time period  
 * Meal count per date range  
-* Average ingredients per meal  
 * Most frequently used ingredient
 
 Accessible from `/demo/meal_report/`
@@ -43,7 +42,7 @@ Accessible from `/demo/meal_report/`
 ## **🔐 Admin Interface**
 
 * Visit `/admin/`  
-* Add and edit meals, ingredients, users, and plans  
+* Add, edit, and delete meals, ingredients, users, and plans  
 * View and filter content by fields like date, user, or meal name
 
 ---
@@ -65,8 +64,7 @@ python manage.py makemigrations
    python manage.py createsuperuser  
 5. Start development server:  
    python manage.py runserver  
-6. Access the app:  
-   * User interface: `http://127.0.0.1:8000/demo/`  
+6. Access the app:   
    * Admin interface: `http://127.0.0.1:8000/admin/`
 
 ---
@@ -76,9 +74,8 @@ python manage.py makemigrations
 * Auto-generated indexes for all primary and foreign keys  
 * Suggested manual indexes:  
   * `Meal.total_calories` (for range filters in reports)  
-  * `MealPlan.date` (for filtering by date)  
-  * `Ingredient.name` (if used in search/autocomplete)
-
+  * `MealPlan.date` (for filtering by date)
+  * 
 See `Index Documentation` for detailed explanations.
 
 ---
@@ -86,16 +83,3 @@ See `Index Documentation` for detailed explanations.
 ## **✍️ Author**
 
 Bharath Sadagopan
-
----
-
-## **📝 License**
-
-This project is for academic purposes under Purdue University's CS348 course. Not intended for production use.
-
----
-
-## **💬 Questions?**
-
-Please reach out via the course portal or contact the project author.
-
